@@ -1,0 +1,382 @@
+﻿<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title> COMP804–ASSESSMENT TASK 3–ASSIGNMENT 1 </title>
+	<script>
+
+		//Task 4: Javascript code for task 4 
+		function setText(btnId) {
+			var spanLionCountDisplay = document.getElementById("msgDisplay");
+			var myImage = document.getElementById("myImg");
+			var inputText = document.getElementById("myText");
+			if (btnId == "btnCat") {
+				inputText.value = "User clicks Cat";
+				myImage.src = "Images/Animals/Cat.jpg";
+				spanLionCountDisplay.innerHTML = "Cat is clicked";
+			}
+			if (btnId == "btnDog") {
+				inputText.value = "User clicks Dog";
+				myImage.src = "Images/Animals/Dog.png";
+				spanLionCountDisplay.innerHTML = "Dog is clicked";
+			}
+			if (btnId == "btnFrog") {
+				inputText.value = "User clicks Frog";
+				myImage.src = "Images/Animals/Frog.jpg";
+				spanLionCountDisplay.innerHTML = "Frog is clicked";
+			}
+		}
+	</script>
+
+	<style>
+		img {
+			width: 304px;
+			height: 228px;
+		}
+
+		.boxed {
+			background-color: rgb(168, 219, 221);
+			border-style: dotted;
+			border-color: green;
+			border-width: 2px;
+			padding: 10px;
+		}
+
+		span {
+			color: darkblue;
+			margin-top: 20px;
+			text-align: justify;
+		}
+
+		.h11 {
+			margin-top: 50px;
+			color: red;
+			text-align: center;
+			font-size: 50px;
+		}
+
+		.h12 {
+			text-decoration: underline;
+		}
+
+		.demo {
+			border: 2px solid #C0C0C0;
+			border-style: double;
+			border-color: black;
+			border-collapse: collapse;
+			padding: 5px;
+			width: 45%
+		}
+
+		.demo th {
+			border: 1px solid #C0C0C0;
+			padding: 5px;
+			text-align: left;
+			background: #181F81;
+		}
+
+		.demo td {
+			border: 1px solid #C0C0C0;
+			padding: 5px;
+			color: black;
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+		}
+
+		.FruitsDemo {
+			border: 2px solid #C0C0C0;
+			border-style: double;
+			border-color: black;
+			border-collapse: collapse;
+			padding: 5px;
+			width: 45%
+		}
+
+		.FruitsDemo th {
+			border: 1px solid #C0C0C0;
+			padding: 5px;
+			text-align: center;
+			background: #188162;
+		}
+
+		.FruitsDemo td {
+			border: 1px solid #C0C0C0;
+			padding: 5px;
+			color: black;
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+		}
+
+		caption {
+			font-weight: bold;
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+			color: darkmagenta;
+			font-size: 20px
+		}
+
+		tr.evenRow {
+			background-color: white
+		}
+
+		tr.oddRow {
+			background-color: gainsboro
+		}
+
+		img.fruitImage {
+			width: 70px;
+			height: 70px;
+		}
+
+		tbody.FruitContent {
+			text-align: center
+		}
+	</style>
+
+</head>
+
+<body>
+	<h1 class="h11"> Assessment Task 3 - Assignment 1 </h1>
+
+	<h1 class="h12"> Task 1 </h1>
+	<!-- html code for task 1 -->
+	<div class="boxed">
+		<span>
+			<h1>7646136 Prashant Jagdale</h1>
+			<h2>COMP804 : Web Security</h2>
+			<h3>Assignment 1, due at the end of Week 5</h3>
+		</span>
+
+	</div>
+
+	<h1 class="h12"> Task 2 </h1>
+	<!-- html code for task 2  -->
+	<table class="demo">
+		<caption>2023 Autumn session dates</caption>
+		<thead>
+			<tr>
+				<th><span
+						style="color: rgb(255, 255, 255); font-family: Montserrat, Verdana, Geneva, sans-serif;">Activity</span><br>
+				</th>
+				<th><span
+						style="color: rgb(255, 255, 255); font-family: Montserrat, Verdana, Geneva, sans-serif;">Date</span>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="oddRow">
+				<td>First day to enrol for re-enrolling (continuing students)</td>
+				<td>21 Nov 2022</td>
+			</tr>
+			<tr class="evenRow">
+				<td>First day to enrol for new students (commencing students)</td>
+				<td>05 Dec 2022</td>
+			</tr>
+			<tr class="oddRow">
+				<td>Orientation</td>
+				<td>20 Feb - 23 Feb 2023
+					<p
+						style="margin: 0px 0px ; padding: 0px; text-rendering: optimizelegibility; color: rgb(0, 22, 65); ">
+						<br>
+					</p>
+					<p style="margin: 0px 0px 1rem; padding: 0px; text-rendering: optimizelegibility;  ">
+						Further information is available on <a
+							href="https://www.uow.edu.au/student/get-started/orientation/" target="_blank"
+							style="background-color: transparent; line-height: inherit; color: rgb(0, 51, 255); text-decoration-line: underline; cursor: pointer; font-weight: 600;">Get
+							Started</a></p>
+				</td>
+			</tr>
+			<tr class="evenRow">
+				<td>Lectures Commence (weeks 1-6)</td>
+				<td>27 Feb -&nbsp;07 Apr 2023</td>
+			</tr>
+			<tr class="oddRow">
+				<td class="oddRow">Last day to enrol / add subjects yourself</td>
+				<td>10&nbsp;Mar 2023</td>
+			</tr>
+		<tbody>
+	</table>
+
+	<h1 class="h12"> Task 3 </h1>
+	<!-- html code for task 3  -->
+
+	<table class="FruitsDemo">
+		<caption>Fruits and their health benefits</caption>
+		<thead>
+			<tr>
+				<th><span
+						style="color: rgb(255, 255, 255); font-family: Montserrat, Verdana, Geneva, sans-serif;">Name</span><br>
+				</th>
+				<th><span
+						style="color: rgb(255, 255, 255); font-family: Montserrat, Verdana, Geneva, sans-serif;">Health
+						Benefit</span>
+				</th>
+			</tr>
+		</thead>
+		<tbody class="FruitContent">
+			<tr>
+				<td>Apple<br><img class="fruitImage" src="Images/Fruits/Apple.jpg"></td>
+				<td>They're rich in fiber and antioxidants.Eating them is linked to a lower risk of many chronic
+					conditions, including diabetes, heart disease, and cancer.
+					<p
+						style="margin: 0px 0px ; padding: 0px; text-rendering: optimizelegibility; color: rgb(0, 22, 65); ">
+						<br>
+					</p>
+					<p style="margin: 0px 0px 1rem; padding: 0px; text-rendering: optimizelegibility;  ">
+						<a href="https://www.healthline.com/nutrition/10-health-benefits-of-apples" target="_blank"
+							style="background-color: transparent; line-height: inherit; color: rgb(0, 51, 255); text-decoration-line: underline; cursor: pointer; font-weight: 600;">8
+							Impressive Health Benefits of Apples</a>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>Banana<br><img class="fruitImage" src="Images/Fruits/Banana.jpg"></td>
+				<td>Bananas contain many essential nutrients and may benefit weight loss, digestion, and heart health.
+					<p
+						style="margin: 0px 0px ; padding: 0px; text-rendering: optimizelegibility; color: rgb(0, 22, 65); ">
+						<br>
+					</p>
+					<p style="margin: 0px 0px 1rem; padding: 0px; text-rendering: optimizelegibility;  ">
+						<a href="https://www.healthline.com/nutrition/11-proven-benefits-of-bananas" target="_blank"
+							style="background-color: transparent; line-height: inherit; color: rgb(0, 51, 255); text-decoration-line: underline; cursor: pointer; font-weight: 600;">11
+							Evidence-Based Health Benefits of Bananas</a>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>Mango<br><img class="fruitImage" src="Images/Fruits/Mango.jpg"></td>
+				<td>It's an antioxidant so it can help with oxidative stress in the body. It is really good source of
+					vitamin C, vitamine A, folate and are pretty high in fiber, which is beneficial for colon cancer
+					prevention, heart disease and weight control.
+					<p
+						style="margin: 0px 0px ; padding: 0px; text-rendering: optimizelegibility; color: rgb(0, 22, 65); ">
+						<br>
+					</p>
+					<p style="margin: 0px 0px 1rem; padding: 0px; text-rendering: optimizelegibility;  ">
+						<a href="https://www.heart.org/en/news/2021/06/02/is-mango-the-luscious-superhero-of-fruit"
+							target="_blank"
+							style="background-color: transparent; line-height: inherit; color: rgb(0, 51, 255); text-decoration-line: underline; cursor: pointer; font-weight: 600;">Is
+							mango the luscious superhero of fruit?</a>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>Orange<br><img class="fruitImage" src="Images/Fruits/Oranges.jpg"></td>
+				<td>In addition to vitamin C, oranges have other nutrients that keep your body healthy. The fiber in
+					oranges can keep blood sugar levels in check and reduce high cholesterol to prevent cardiovascular
+					disease.
+					<p
+						style="margin: 0px 0px ; padding: 0px; text-rendering: optimizelegibility; color: rgb(0, 22, 65); ">
+						<br>
+					</p>
+					<p style="margin: 0px 0px 1rem; padding: 0px; text-rendering: optimizelegibility;  ">
+						<a href="https://www.webmd.com/diet/health-benefits-oranges" target="_blank"
+							style="background-color: transparent; line-height: inherit; color: rgb(0, 51, 255); text-decoration-line: underline; cursor: pointer; font-weight: 600;">Health
+							Benefits of Oranges</a>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>Papaya<br><img class="fruitImage" src="Images/Fruits/Papaya.jpg"></td>
+				<td>The possible health benefits of consuming papaya include a reduced risk of heart disease, diabetes,
+					cancer, aiding in digestion.
+					<p
+						style="margin: 0px 0px ; padding: 0px; text-rendering: optimizelegibility; color: rgb(0, 22, 65); ">
+						<br>
+					</p>
+					<p style="margin: 0px 0px 1rem; padding: 0px; text-rendering: optimizelegibility;  ">
+						<a href="https://www.medicalnewstoday.com/articles/275517" target="_blank"
+							style="background-color: transparent; line-height: inherit; color: rgb(0, 51, 255); text-decoration-line: underline; cursor: pointer; font-weight: 600;">What
+							are the health benefits of papaya?</a>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>Watermelon<br><img class="fruitImage" src="Images/Fruits/Watermelon.jpg"></td>
+				<td>Watermelon is a naturally low-calorie package. It contributes key antioxidant nutrients that support
+					disease prevention and overall wellness.
+					<p
+						style="margin: 0px 0px ; padding: 0px; text-rendering: optimizelegibility; color: rgb(0, 22, 65); ">
+						<br>
+					</p>
+					<p style="margin: 0px 0px 1rem; padding: 0px; text-rendering: optimizelegibility;  ">
+						<a href="https://www.goodhousekeeping.com/health/diet-nutrition/a40257118/watermelon-health-benefits/"
+							target="_blank"
+							style="background-color: transparent; line-height: inherit; color: rgb(0, 51, 255); text-decoration-line: underline; cursor: pointer; font-weight: 600;">11
+							Top Watermelon Health Benefits That Nutritionists Say Are Backed by Promising Research</a>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>Kiwi<br><img class="fruitImage" src="Images/Fruits/Kiwi.jpg"></td>
+				<td>This tart fruit can support heart health, digestive health, and immunity.
+					<p
+						style="margin: 0px 0px ; padding: 0px; text-rendering: optimizelegibility; color: rgb(0, 22, 65); ">
+						<br>
+					</p>
+					<p style="margin: 0px 0px 1rem; padding: 0px; text-rendering: optimizelegibility;  ">
+						<a href="https://www.webmd.com/diet/health-benefits-kiwi" target="_blank"
+							style="background-color: transparent; line-height: inherit; color: rgb(0, 51, 255); text-decoration-line: underline; cursor: pointer; font-weight: 600;">Health
+							Benefits of Kiwi</a>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>Grapes<br><img class="fruitImage" src="Images/Fruits/Grapes.jpg"></td>
+				<td>This fruit is a source of vitamins A, C, and K, beta-carotene, and potassium.
+					<p
+						style="margin: 0px 0px ; padding: 0px; text-rendering: optimizelegibility; color: rgb(0, 22, 65); ">
+						<br>
+					</p>
+					<p style="margin: 0px 0px 1rem; padding: 0px; text-rendering: optimizelegibility;  ">
+						<a href="https://www.thedailymeal.com/1075083/what-really-happens-when-you-eat-grapes-every-day/"
+							target="_blank"
+							style="background-color: transparent; line-height: inherit; color: rgb(0, 51, 255); text-decoration-line: underline; cursor: pointer; font-weight: 600;">What
+							Really Happens When You Eat Grapes Every Day</a>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>Guava<br><img class="fruitImage" src="Images/Fruits/Guava.jpg"></td>
+				<td>The guava fruit contains a variety of antioxidants that fight inflammation and improve heart health,
+					digestion, and overall well-being.
+					<p
+						style="margin: 0px 0px ; padding: 0px; text-rendering: optimizelegibility; color: rgb(0, 22, 65); ">
+						<br>
+					</p>
+					<p style="margin: 0px 0px 1rem; padding: 0px; text-rendering: optimizelegibility;  ">
+						<a href="https://www.shape.com/healthy-eating/diet-tips/benefits-guava-fruit-nutrition"
+							target="_blank"
+							style="background-color: transparent; line-height: inherit; color: rgb(0, 51, 255); text-decoration-line: underline; cursor: pointer; font-weight: 600;">Why
+							You Should Be Eating More Guava Fruit</a>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>Pineapple<br><img class="fruitImage" src="Images/Fruits/Pineapple.jpg"></td>
+				<td>Pineapples are tropical fruits that are rich in vitamins, enzymes and antioxidants. They may help
+					boost the immune system, build strong bones and aid indigestion.
+					<p
+						style="margin: 0px 0px ; padding: 0px; text-rendering: optimizelegibility; color: rgb(0, 22, 65); ">
+						<br>
+					</p>
+					<p style="margin: 0px 0px 1rem; padding: 0px; text-rendering: optimizelegibility;  ">
+						<a href="https://www.livescience.com/45487-pineapple-nutrition.html" target="_blank"
+							style="background-color: transparent; line-height: inherit; color: rgb(0, 51, 255); text-decoration-line: underline; cursor: pointer; font-weight: 600;">Pineapple:
+							Nutrition facts and health benefits</a>
+					</p>
+				</td>
+			</tr>
+		<tbody>
+	</table>
+
+	<h1 class="h12"> Task 4 </h1>
+	<!-- html code for task 4  -->
+	<button id="btnCat" onClick="setText(this.id);"> Cat </button>
+	<button id="btnDog" onClick="setText(this.id);"> Dog </button>
+	<button id="btnFrog" onClick="setText(this.id);"> Frog </button><br><br>
+	<input type="text" id="myText"><br><br>
+	<span id="msgDisplay"></span> <br><br>
+	<img id="myImg" style="border: coral;">
+
+
+</body>
+
+</html>
